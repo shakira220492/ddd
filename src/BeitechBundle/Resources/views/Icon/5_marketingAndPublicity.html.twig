@@ -1,0 +1,88 @@
+<div id="marketingAndPublicityIcon"
+     style="
+     position: absolute;
+     {#     background-color: red;#}
+     right: 0px;
+     top: 240px;
+     width: 30px;
+     height: 30px;
+     transition-property: all;
+     transition-duration: 0.5s;"
+     onclick="validateMarketingAndPublicityForm();">
+    <img src="files/images/icons/marketing and publicity.png" alt="Mountain View" style="width:30px; height:30px; opacity: 0.9;">
+</div>
+
+<script>
+    function validateMarketingAndPublicityForm() {
+        var login = "true";
+
+        if (login === "true")
+        {
+            highlightMarketingAndPublicityForm();
+        } else
+        {
+            highlightlogInForm();
+        }
+    }
+
+    function highlightMarketingAndPublicityForm()
+    {
+        document.getElementById('addToListForm').style.zIndex = 1;
+        document.getElementById('donateToThisArtistForm').style.zIndex = 1;
+        document.getElementById('logInForm').style.zIndex = 1;
+        document.getElementById('uploadVideoForm').style.zIndex = 1;
+        document.getElementById('marketingAndPublicityForm').style.zIndex = 2;
+        document.getElementById('informationForm').style.zIndex = 1;
+        document.getElementById('commentForm').style.zIndex = 1;
+        document.getElementById('newsFeedForm').style.zIndex = 1;
+
+        document.getElementById('addToListFormBackGround').style.zIndex = 1;
+        document.getElementById('donateToThisArtistFormBackGround').style.zIndex = 1;
+        document.getElementById('logInFormBackGround').style.zIndex = 1;
+        document.getElementById('uploadVideoFormBackGround').style.zIndex = 1;
+        document.getElementById('marketingAndPublicityFormBackGround').style.zIndex = 2;
+        document.getElementById('informationFormBackGround').style.zIndex = 1;
+        document.getElementById('commentFormBackGround').style.zIndex = 1;
+        document.getElementById('newsFeedFormBackGround').style.zIndex = 1;
+
+        if (document.getElementById('marketingAndPublicityForm').style.opacity == 1)
+        {
+            document.getElementById('addToListForm').style.opacity = 0;
+            document.getElementById('donateToThisArtistForm').style.opacity = 0;
+            document.getElementById('logInForm').style.opacity = 0;
+            document.getElementById('uploadVideoForm').style.opacity = 0;
+            document.getElementById('marketingAndPublicityForm').style.opacity = 0;
+            document.getElementById('informationForm').style.opacity = 0;
+            document.getElementById('commentForm').style.opacity = 0;
+            document.getElementById('newsFeedForm').style.opacity = 0;
+
+            document.getElementById('addToListFormBackGround').style.opacity = 0;
+            document.getElementById('donateToThisArtistFormBackGround').style.opacity = 0;
+            document.getElementById('logInFormBackGround').style.opacity = 0;
+            document.getElementById('uploadVideoFormBackGround').style.opacity = 0;
+            document.getElementById('marketingAndPublicityFormBackGround').style.opacity = 0;
+            document.getElementById('informationFormBackGround').style.opacity = 0;
+            document.getElementById('commentFormBackGround').style.opacity = 0;
+            document.getElementById('newsFeedFormBackGround').style.opacity = 0;
+        } else
+        {
+            document.getElementById('addToListForm').style.opacity = 0;
+            document.getElementById('donateToThisArtistForm').style.opacity = 0;
+            document.getElementById('logInForm').style.opacity = 0;
+            document.getElementById('uploadVideoForm').style.opacity = 0;
+            document.getElementById('marketingAndPublicityForm').style.opacity = 1;
+            document.getElementById('informationForm').style.opacity = 0;
+            document.getElementById('commentForm').style.opacity = 0;
+            document.getElementById('newsFeedForm').style.opacity = 0;
+
+            document.getElementById('addToListFormBackGround').style.opacity = 0;
+            document.getElementById('donateToThisArtistFormBackGround').style.opacity = 0;
+            document.getElementById('logInFormBackGround').style.opacity = 0;
+            document.getElementById('uploadVideoFormBackGround').style.opacity = 0;
+            document.getElementById('marketingAndPublicityFormBackGround').style.opacity = 0.3;
+            document.getElementById('informationFormBackGround').style.opacity = 0;
+            document.getElementById('commentFormBackGround').style.opacity = 0;
+            document.getElementById('newsFeedFormBackGround').style.opacity = 0;
+        }
+    }
+</script>
